@@ -1,3 +1,16 @@
+terraform {
+  required_providers {
+    aws = {
+      source = "hashicorp/aws"
+      version = "4.30.0"
+    }
+  }
+}
+
+provider "aws" {
+  # Configuration options
+}
+
 module "ec2_instance" {
   source  = "app.terraform.io/cesteban-demos/ec2-instance/aws"
   version = "= 1.0.0"
