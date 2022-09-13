@@ -16,6 +16,6 @@ provider "aws" {
 
 module "ec2_instance" {
   source  = "app.terraform.io/cesteban-demos/ec2-instance/aws"
-  version = "= 1.0.0"
+  version = "1.1.0"
 
 }
