@@ -5,3 +5,7 @@ variable "access_key" {
 variable "secret_key" {
   description = "the secret key for accessing AWS"
 }
+
+variable "module_version" {
+
+}
