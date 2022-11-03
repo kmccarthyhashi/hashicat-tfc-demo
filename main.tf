@@ -14,8 +14,8 @@ provider "aws" {
   secret_key = var.secret_key
 }
 
-module "ec2_instance" {
-  source  = "app.terraform.io/cesteban-demos/ec2-instance/aws"
-  version = "1.1.2"
+module "hashicat" {
+  source  = "app.terraform.io/cesteban-demos/hashicat/aws"
+  version = "1.0.0"
 
 }
