@@ -8,12 +8,13 @@ terraform {
 }
 
 provider "aws" {
-  region = "us-east-1"
+  region = var.region
 }
 
 module "hashicat" {
   source  = "app.terraform.io/cesteban-demos/hashicat/aws"
   version = "1.2.0"
   instance_type = var.instance_type
+  region = var.region
 
 }
