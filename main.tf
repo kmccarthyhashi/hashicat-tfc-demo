@@ -16,7 +16,7 @@ module "hashicat" {
   version = "1.9.1"
   instance_type = var.instance_type
   region = var.region
-  instance_ami = "ami-0e06b8606945f77fb"
+  instance_ami = "ami-02c932ab9e2245e47"
 
 }
 

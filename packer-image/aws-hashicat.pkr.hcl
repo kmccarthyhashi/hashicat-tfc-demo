@@ -58,17 +58,18 @@ build {
     "source.amazon-ebs.ubuntu"
   ]
 
+  provisioner "file" {
+  source = "../files/deploy_app.sh"
+  destination = "/home/ubuntu/"
+  }
+  
   provisioner "shell" {
     inline =[
         "echo '*** Installing apache2'",
         "sudo apt-get update -y",
         "sudo apt-get install apache2 -y",
         "echo '*** Completed Installing apache2'",
+        "sudo mv /home/ubuntu/deploy_app.sh /var/www/html/index.html"
     ]
-  }
-
-  provisioner "file" {
-  source = "../files/deploy_app.sh"
-  destination = "/home/ubuntu/"
   }
 }
