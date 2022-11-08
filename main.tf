@@ -13,7 +13,7 @@ provider "aws" {
 
 module "hashicat" {
   source  = "app.terraform.io/cesteban-demos/hashicat/aws"
-  version = "1.8.0"
+  version = "1.9.0"
   instance_type = var.instance_type
   region = var.region
   instance_ami = "ami-0e06b8606945f77fb"
