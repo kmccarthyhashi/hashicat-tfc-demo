@@ -1,8 +1,3 @@
-#!/bin/bash
-# Script to deploy a very simple web application.
-# The web app has a customizable image and some text.
-
-
 <html>
   <head><title>Meow!</title></head>
   <body>
@@ -10,8 +5,8 @@
 
   <!-- BEGIN -->
   <center><img src="http://placekitten.com/600/400"></img></center>
-  <center><h2>Meow World!</h2></center>
-  Welcome to Carlos' Cat app!
+  <center><h1>Meow World!</h1></center>
+  <center><h2>Welcome to Carlos' Cat app!</h2></center>
   <!-- END -->
 
   </div>
