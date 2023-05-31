@@ -1,4 +1,4 @@
-# Standard TFCB Demo
+# HashiCat TFC Demo
  *Demo that deploys AWS EC2 instance using a module from the PMR*
 
 ## Initial Set-Up
