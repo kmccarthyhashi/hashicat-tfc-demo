@@ -97,8 +97,16 @@ Run the command:
 packer build aws-hashicat.pkr.hcl
 ```
 
-### SetUp Complete - Run on TFC
+### Configure TF Variable on TFC - Run on TFC
 <a name="set-up-complete"></a>
+
+Set a TF variable in your TFC workspace for the ec2 instance type
+```
+instance_type = t2.micro //This is the value I use to pass Sentinel budget policy
+```
+```
+instance_type = c5d.2xlarge //This is the value I use to fail the Sentinel budget policy to showcase the policy check feature and how soft mandatory policies can be overriden if necessary
+```
 Deploy this configuration that consumes the hashicat module that you stored in the PMR
 
 ## EXTRAS
@@ -124,8 +132,7 @@ git clone https://github.com/cesteban29/aws-sentinel-policies.git
     Name: Enter a name for the policy set.
     VCS Provider: Choose the version control system provider (e.g., GitHub, GitLab, Bitbucket) where your policy repository is hosted.
     Repository: Select the repository where your policy configuration is stored.
-    Branch: Specify the branch of the repository that contains your policy configuration.
-    Policy Configuration Path: Enter the path to the policy configuration file within the repository (e.g., .tfc/policy.hcl).
-    Optionally, you can enable the "Enforce policies for all runs" option if you want to enforce the policies on all Terraform runs within the organization.
+    Policies Path: /Demo
+    Set Policies enforced on selected workspaces and then select your demo workspace
 
 6. Click on the "Connect Policy Set" button to connect the policy set to Terraform Cloud.
