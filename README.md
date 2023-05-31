@@ -115,7 +115,7 @@ Deploy this configuration that consumes the hashicat module that you stored in t
 ### Sentinel Policy Set 
 #### Clone Sentinel Policies Repo
 ```
-git clone https://github.com/cesteban29/aws-sentinel-policies.git
+git clone https://github.com/cesteban29/hashicat-tfc-sentinel-policies.git
 ```
 
 ### Connect Policy Set to TFC
